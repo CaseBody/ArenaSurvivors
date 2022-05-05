@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Realtime;
 using UnityEngine.UI;
 using Photon.Pun;
 using TMPro;
@@ -9,27 +10,32 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
     public TMP_InputField joinInput;
     public TMP_InputField createInput;
+    public TMP_Text roomSizeText;
+    public Slider roomSizeSlider;
 
-    public void AcceptClicked()
+    public void CreateRoomClicked()
     {
-        if (createInput.text == "")
-        {
-            JoinRoom();
-        }
-        else
-        {
-            CreateRoom();
-        }
+        RoomOptions options = new RoomOptions();
+        options.MaxPlayers = (byte)(roomSizeSlider.value + 1);
+        PhotonNetwork.CreateRoom(createInput.text);
 
+        transform.position = transform.forward;
+    }
+
+
+    public void onSliderChanged()
+    {
+        roomSizeText.text = "Size: " + (roomSizeSlider.value + 1);
+    }
+
+    public void JoinRoomClicked()
+    {
+        JoinRoom();
     }
 
     public void JoinRoom()
     {
         PhotonNetwork.JoinRoom(joinInput.text);
-    }
-    public void CreateRoom()
-    {
-        PhotonNetwork.CreateRoom(createInput.text);
     }
 
     public override void OnJoinedRoom()
