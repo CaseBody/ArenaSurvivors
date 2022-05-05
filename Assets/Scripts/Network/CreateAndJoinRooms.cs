@@ -19,7 +19,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         options.MaxPlayers = (byte)(roomSizeSlider.value + 1);
         PhotonNetwork.CreateRoom(createInput.text);
 
-        transform.position = transform.forward;
+        transform.Translate(transform.forward);
     }
 
 
