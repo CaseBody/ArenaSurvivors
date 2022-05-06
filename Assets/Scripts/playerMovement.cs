@@ -8,11 +8,15 @@ public class playerMovement : MonoBehaviour
 {
     private Rigidbody rigidbody;
     private PhotonView view;
+    //movement
     private bool wIsPressed;
     private bool aIsPressed;
     private bool sIsPressed;
     private bool dIsPressed;
     public float runSpeed = 7.5f;
+    //dash
+    private bool spaceIsPressed;
+    public float dashSpeed = 10f;
 
     //camera
     private Camera cam;
@@ -27,6 +31,7 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //movement
         if (Input.GetKey(KeyCode.W))
         {
             wIsPressed = true;
@@ -43,7 +48,13 @@ public class playerMovement : MonoBehaviour
         {
             dIsPressed = true;
         }
+        //dash
+        if (Input.GetKey(KeyCode.Space))
+        {
+            spaceIsPressed = true;
+        }
 
+        //camera
         if (view.IsMine)
         {
             //camera
@@ -59,6 +70,7 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //movement
         if (view.IsMine)
         {
 
@@ -84,6 +96,15 @@ public class playerMovement : MonoBehaviour
             {
                 transform.position += Vector3.right * Time.deltaTime * runSpeed;
                 dIsPressed = false;
+            }
+
+            //dash
+            if (spaceIsPressed)
+            {
+                //Vector3 mousePostion = transform.position.(Input.mousePosition.x, 0, Input.mousePosition.z);
+                //transform.position = Vector3.MoveTowards(mousePosition - PlayerPosition, dashSpeed * Time.deltaTime);
+                //transform.position += Vector3.MoveTowards * Time.deltaTime * dashSpeed;
+                spaceIsPressed = false;
             }
         }
     }
