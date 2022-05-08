@@ -14,8 +14,12 @@ public class playerMovement : MonoBehaviour
     private bool sIsPressed;
     private bool dIsPressed;
     public float runSpeed = 7.5f;
+    public float schuineRunSpeed = 7.5f;
     //dash
+    Vector3 dashPosition;
     private bool spaceIsPressed;
+    private bool isDashing;
+    private int dashTeller;
     public float dashSpeed = 10f;
 
     //camera
@@ -73,6 +77,22 @@ public class playerMovement : MonoBehaviour
         //movement
         if (view.IsMine)
         {
+            if(wIsPressed && aIsPressed)
+            {
+                runSpeed = schuineRunSpeed;
+            }
+            if (wIsPressed && dIsPressed)
+            {
+                runSpeed = schuineRunSpeed;
+            }
+            if (sIsPressed && aIsPressed)
+            {
+                runSpeed = schuineRunSpeed;
+            }
+            if (sIsPressed && dIsPressed)
+            {
+                runSpeed = schuineRunSpeed;
+            }
 
             if (wIsPressed)
             {
@@ -98,14 +118,40 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
-            //dash
-            if (spaceIsPressed)
+            Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
+            Plane p = new Plane(Vector3.up, transform.position);
+            if (p.Raycast(mouseRay, out float hitDist))
             {
-                //Vector3 mousePostion = transform.position.(Input.mousePosition.x, 0, Input.mousePosition.z);
-                //transform.position = Vector3.MoveTowards(mousePosition - PlayerPosition, dashSpeed * Time.deltaTime);
-                //transform.position += Vector3.MoveTowards * Time.deltaTime * dashSpeed;
-                spaceIsPressed = false;
+                Vector3 hitPoint = mouseRay.GetPoint(hitDist);
+                if (spaceIsPressed && !isDashing)
+                {
+                    dashPosition = hitPoint;
+                    dashTeller = 100;
+                    isDashing = true;
+                }
+                if (isDashing)
+                {
+                    if (dashTeller > 0)
+                    {
+                        dashTeller--;
+                        //transform.MoveTowards(new Vector3(dashPosition.x, transform.position.y, dashPosition.y) * runSpeed);
+                        transform.position = Vector3.MoveTowards(dashPosition.normalized, transform.position, dashPosition.z * runSpeed);
+                    }
+                    else
+                    {
+                        isDashing = false;
+                    }
+                }
+                //Debug.Log(hitPoint);
             }
         }
     }
 }
+
+//transform.MoveTowards = new Vector3(Input.mousePosition.x, transform.position.y, Input.mousePosition.z);
+
+//Vector3 dashPosition;
+//private bool spaceIsPressed;
+//private bool isDashing;
+//private int dashTeller;
+//public float dashSpeed = 10f;
