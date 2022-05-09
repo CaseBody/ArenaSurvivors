@@ -21,13 +21,19 @@ public class playerMovement : MonoBehaviour
     private bool isDashing;
     private int dashTeller;
     private int dashCooldown;
-    public float dashSpeed = 10f;
+    public float dashSpeed = 20f;
 
     //attack
-    public bool mouseIsPressed;
-    public bool attackAnimPlayed;
-    public bool isAttacking;
-    public float attackCooldown;
+    private bool mouseIsPressed;
+    private bool isAttacking;
+    private float attackCooldown;
+    public int attackTime;
+    public int attackRange;
+
+    public GameObject leftHand;
+    public GameObject rightHand;
+    public GameObject weapon;
+
 
     public Animator anim;
 
@@ -45,6 +51,11 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (weapon == null)
+        {
+            AddWeapon("2h Sword");
+        }
+
         //movement
         if (Input.GetKey(KeyCode.W))
         {
@@ -157,7 +168,7 @@ public class playerMovement : MonoBehaviour
                     Vector3 hitPoint = mouseRay.GetPoint(hitDist);
                     transform.LookAt(hitPoint);
                     dashPosition = hitPoint;
-                    dashTeller = 15;
+                    dashTeller = 100;
                     isDashing = true;
                     dashCooldown = 500;
                 }
@@ -173,7 +184,7 @@ public class playerMovement : MonoBehaviour
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), dashSpeed * Time.deltaTime);
                 }
                 else
                 {
@@ -189,19 +200,18 @@ public class playerMovement : MonoBehaviour
             if (mouseIsPressed && attackCooldown == 0)
             {
                 isAttacking = true;
-                attackCooldown = 5;
+                attackCooldown = 1;
             }
 
             if (isAttacking)
             {
-                Debug.Log(attackCooldown);
-                Debug.Log(isAttacking);
-                attackCooldown--;
+                attackCooldown -= 1 * Time.deltaTime;
 
                 if (attackCooldown <= 0)
                 {
                     attackCooldown = 0;
                     isAttacking = false;
+                    anim.SetInteger("Attack", 0);
                 }
             }
 
@@ -296,8 +306,35 @@ public class playerMovement : MonoBehaviour
 
         if (isAttacking)
         {
-            anim.SetInteger("Anim", 5);
+            anim.SetInteger("Attack", 1);
         }
 
+    }
+
+    public void AddWeapon(string name)
+    {
+        weapon = PhotonNetwork.Instantiate(name, transform.position, Quaternion.identity);
+
+        var script = weapon.GetComponent<WeaponScript>();
+        
+        if (script.attachLeft)
+        {
+            weapon.transform.position = leftHand.transform.position;
+            weapon.transform.rotation = leftHand.transform.rotation;
+            weapon.transform.parent = leftHand.transform;
+        }
+        else
+        {
+            weapon.transform.position = rightHand.transform.position;
+            weapon.transform.rotation = rightHand.transform.rotation;
+            weapon.transform.parent = rightHand.transform;
+        }
+
+        anim.runtimeAnimatorController = script.animator as RuntimeAnimatorController;
+    }
+
+    public void Hit()
+    {
+        
     }
 }
