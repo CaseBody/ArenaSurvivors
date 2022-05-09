@@ -14,12 +14,12 @@ public class playerMovement : MonoBehaviour
     private bool sIsPressed;
     private bool dIsPressed;
     public float runSpeed = 7.5f;
-    public float schuineRunSpeed = 7.5f;
     //dash
     Vector3 dashPosition;
     private bool spaceIsPressed;
     private bool isDashing;
     private int dashTeller;
+    private int dashCooldown;
     public float dashSpeed = 10f;
 
     //camera
@@ -79,19 +79,31 @@ public class playerMovement : MonoBehaviour
         {
             if(wIsPressed && aIsPressed)
             {
-                runSpeed = schuineRunSpeed;
+                transform.position += Vector3.forward * Time.deltaTime * (runSpeed *0.7f);
+                transform.position += Vector3.left * Time.deltaTime * (runSpeed * 0.7f);
+                wIsPressed = false;
+                aIsPressed = false;
             }
             if (wIsPressed && dIsPressed)
             {
-                runSpeed = schuineRunSpeed;
+                transform.position += Vector3.forward * Time.deltaTime * (runSpeed * 0.7f);
+                transform.position += Vector3.right * Time.deltaTime * (runSpeed * 0.7f);
+                wIsPressed = false;
+                dIsPressed = false;
             }
             if (sIsPressed && aIsPressed)
             {
-                runSpeed = schuineRunSpeed;
+                transform.position += Vector3.back * Time.deltaTime * (runSpeed * 0.7f);
+                transform.position += Vector3.left * Time.deltaTime * (runSpeed * 0.7f);
+                sIsPressed = false;
+                aIsPressed = false;
             }
             if (sIsPressed && dIsPressed)
             {
-                runSpeed = schuineRunSpeed;
+                transform.position += Vector3.back * Time.deltaTime * (runSpeed * 0.7f);
+                transform.position += Vector3.right * Time.deltaTime * (runSpeed * 0.7f);
+                sIsPressed = false;
+                dIsPressed = false;
             }
 
             if (wIsPressed)
@@ -118,40 +130,45 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
-            Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
-            Plane p = new Plane(Vector3.up, transform.position);
-            if (p.Raycast(mouseRay, out float hitDist))
+            if (spaceIsPressed && !isDashing && dashCooldown == 0)
             {
-                Vector3 hitPoint = mouseRay.GetPoint(hitDist);
-                if (spaceIsPressed && !isDashing)
+                Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
+                Plane p = new Plane(Vector3.up, transform.position);
+                if (p.Raycast(mouseRay, out float hitDist))
                 {
+                    Vector3 hitPoint = mouseRay.GetPoint(hitDist);
+                    transform.LookAt(hitPoint);
                     dashPosition = hitPoint;
-                    dashTeller = 100;
+                    dashTeller = 15;
                     isDashing = true;
+                    dashCooldown = 500;
                 }
-                if (isDashing)
+            }
+
+            if (spaceIsPressed)
+            {
+                spaceIsPressed = false;
+            }
+
+            if (isDashing)
+            {
+                Debug.Log(dashTeller);
+
+                if (dashTeller > 0)
                 {
-                    if (dashTeller > 0)
-                    {
-                        dashTeller--;
-                        //transform.MoveTowards(new Vector3(dashPosition.x, transform.position.y, dashPosition.y) * runSpeed);
-                        transform.position = Vector3.MoveTowards(dashPosition.normalized, transform.position, dashPosition.z * runSpeed);
-                    }
-                    else
-                    {
-                        isDashing = false;
-                    }
+                    dashTeller--;
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f);
                 }
-                //Debug.Log(hitPoint);
+                else
+                {
+                    isDashing = false;
+                }
+            }
+
+            if (dashCooldown > 0)
+            {
+                dashCooldown--;
             }
         }
     }
 }
-
-//transform.MoveTowards = new Vector3(Input.mousePosition.x, transform.position.y, Input.mousePosition.z);
-
-//Vector3 dashPosition;
-//private bool spaceIsPressed;
-//private bool isDashing;
-//private int dashTeller;
-//public float dashSpeed = 10f;
