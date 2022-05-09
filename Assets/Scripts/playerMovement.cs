@@ -74,19 +74,17 @@ public class playerMovement : MonoBehaviour
                 transform.LookAt(hitPoint);
             }
         }
-    }
 
-    private void FixedUpdate()
-    {
         //movement
         if (view.IsMine)
         {
             //Anim
             CheckAnim();
 
-            if(wIsPressed && aIsPressed)
+            //Diagonal
+            if (wIsPressed && aIsPressed)
             {
-                transform.position += Vector3.forward * Time.deltaTime * (runSpeed *0.7f);
+                transform.position += Vector3.forward * Time.deltaTime * (runSpeed * 0.7f);
                 transform.position += Vector3.left * Time.deltaTime * (runSpeed * 0.7f);
                 wIsPressed = false;
                 aIsPressed = false;
@@ -138,6 +136,8 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
+
+            //Dash
             if (spaceIsPressed && !isDashing && dashCooldown == 0)
             {
                 Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
@@ -165,7 +165,7 @@ public class playerMovement : MonoBehaviour
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f);
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.5f * Time.deltaTime);
                 }
                 else
                 {
