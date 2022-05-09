@@ -23,6 +23,12 @@ public class playerMovement : MonoBehaviour
     private int dashCooldown;
     public float dashSpeed = 10f;
 
+    //attack
+    public bool mouseIsPressed;
+    public bool attackAnimPlayed;
+    public bool isAttacking;
+    public float attackCooldown;
+
     public Animator anim;
 
     //camera
@@ -56,6 +62,10 @@ public class playerMovement : MonoBehaviour
         {
             dIsPressed = true;
         }
+        if (Input.GetMouseButton(0))
+        {
+            mouseIsPressed = true;
+        }
         //dash
         if (Input.GetKey(KeyCode.Space))
         {
@@ -74,7 +84,7 @@ public class playerMovement : MonoBehaviour
                 transform.LookAt(hitPoint);
             }
         }
-
+        
         //movement
         if (view.IsMine)
         {
@@ -160,12 +170,10 @@ public class playerMovement : MonoBehaviour
 
             if (isDashing)
             {
-                Debug.Log(dashTeller);
-
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.5f * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f * Time.deltaTime);
                 }
                 else
                 {
@@ -177,11 +185,33 @@ public class playerMovement : MonoBehaviour
             {
                 dashCooldown--;
             }
+
+            if (mouseIsPressed && attackCooldown == 0)
+            {
+                isAttacking = true;
+                attackCooldown = 5;
+            }
+
+            if (isAttacking)
+            {
+                Debug.Log(attackCooldown);
+                Debug.Log(isAttacking);
+                attackCooldown--;
+
+                if (attackCooldown <= 0)
+                {
+                    attackCooldown = 0;
+                    isAttacking = false;
+                }
+            }
+
+            mouseIsPressed = false;
         }
     }
 
     private void CheckAnim()
     {
+
         if (wIsPressed && !sIsPressed)
         {
 
@@ -262,6 +292,11 @@ public class playerMovement : MonoBehaviour
         else
         {
             anim.SetInteger("Anim", 0);
+        }
+
+        if (isAttacking)
+        {
+            anim.SetInteger("Anim", 5);
         }
 
     }
