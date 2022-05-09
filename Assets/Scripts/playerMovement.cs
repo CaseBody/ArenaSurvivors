@@ -1,6 +1,7 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 //using Photon.Pun;
 
@@ -22,6 +23,8 @@ public class playerMovement : MonoBehaviour
     private int dashCooldown;
     public float dashSpeed = 10f;
 
+    public Animator anim;
+
     //camera
     private Camera cam;
 
@@ -30,6 +33,7 @@ public class playerMovement : MonoBehaviour
     {
         view = GetComponent<PhotonView>();
         cam = Camera.main;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -77,6 +81,9 @@ public class playerMovement : MonoBehaviour
         //movement
         if (view.IsMine)
         {
+            //Anim
+            CheckAnim();
+
             if(wIsPressed && aIsPressed)
             {
                 transform.position += Vector3.forward * Time.deltaTime * (runSpeed *0.7f);
@@ -106,6 +113,7 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
+            // Movement
             if (wIsPressed)
             {
                 transform.position += Vector3.forward * Time.deltaTime * runSpeed;
@@ -170,5 +178,91 @@ public class playerMovement : MonoBehaviour
                 dashCooldown--;
             }
         }
+    }
+
+    private void CheckAnim()
+    {
+        if (wIsPressed && !sIsPressed)
+        {
+
+            if (transform.localRotation.y > 0.30 && transform.localRotation.y < 0.93)
+            {
+                anim.SetInteger("Anim", 4);
+            }
+            else if (transform.localRotation.y < -0.30)
+            {
+                anim.SetInteger("Anim", 3);
+            }
+            else if (transform.localRotation.y > 0.93 && transform.localRotation.y < 1.1)
+            {
+                anim.SetInteger("Anim", 2);
+            }
+            else
+            {
+                anim.SetInteger("Anim", 1);
+            }
+        }
+        else if (sIsPressed && !wIsPressed)
+        {
+            if (transform.localRotation.y > 0.30 && transform.localRotation.y < 0.93)
+            {
+                anim.SetInteger("Anim", 3);
+            }
+            else if (transform.localRotation.y < -0.30)
+            {
+                anim.SetInteger("Anim", 4);
+            }
+            else if (transform.localRotation.y > 0.93 && transform.localRotation.y < 1.1)
+            {
+                anim.SetInteger("Anim", 1);
+            }
+            else
+            {
+                anim.SetInteger("Anim", 2);
+            }
+        }
+        else if (aIsPressed && !dIsPressed)
+        {
+            if (transform.localRotation.y > 0.30 && transform.localRotation.y < 0.93)
+            {
+                anim.SetInteger("Anim", 2);
+            }
+            else if (transform.localRotation.y < -0.30)
+            {
+                anim.SetInteger("Anim", 1);
+            }
+            else if (transform.localRotation.y > 0.93 && transform.localRotation.y < 1.1)
+            {
+                anim.SetInteger("Anim", 3);
+            }
+            else
+            {
+                anim.SetInteger("Anim", 4);
+            }
+        }
+        else if (dIsPressed && !sIsPressed)
+        {
+            if (transform.localRotation.y > 0.30 && transform.localRotation.y < 0.93)
+            {
+                anim.SetInteger("Anim", 1);
+            }
+            else if (transform.localRotation.y < -0.30)
+            {
+                anim.SetInteger("Anim", 2);
+            }
+            else if (transform.localRotation.y > 0.93 && transform.localRotation.y < 1.1)
+            {
+                anim.SetInteger("Anim", 4);
+            }
+            else
+            {
+                anim.SetInteger("Anim", 3);
+            }
+        }
+        else
+        {
+            anim.SetInteger("Anim", 0);
+        }
+
     }
 }
