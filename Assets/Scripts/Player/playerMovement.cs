@@ -14,7 +14,7 @@ public class playerMovement : MonoBehaviour
     private bool aIsPressed;
     private bool sIsPressed;
     private bool dIsPressed;
-    public float runSpeed = 7.5f;
+    public float runSpeed = 6;
     //dash
     Vector3 dashPosition;
     private bool spaceIsPressed;
@@ -85,31 +85,38 @@ public class playerMovement : MonoBehaviour
             //Anim
             CheckAnim();
 
+            if (!wIsPressed && !sIsPressed && !dIsPressed && !aIsPressed && !isDashing)
+            {
+                rb.velocity = Vector3.zero;
+            }
+
             if(wIsPressed && aIsPressed)
             {
-                transform.position += Vector3.forward * Time.deltaTime * (runSpeed *0.7f);
-                transform.position += Vector3.left * Time.deltaTime * (runSpeed * 0.7f);
+                if (!isDashing)
+                {
+                    rb.velocity = new Vector3((runSpeed * -1) * 0.7f, 0, runSpeed * 0.7f);
+                }
                 wIsPressed = false;
                 aIsPressed = false;
             }
             if (wIsPressed && dIsPressed)
             {
-                transform.position += Vector3.forward * Time.deltaTime * (runSpeed * 0.7f);
-                transform.position += Vector3.right * Time.deltaTime * (runSpeed * 0.7f);
+                if (!isDashing)
+                    rb.velocity = new Vector3(runSpeed * 0.7f, 0, runSpeed * 0.7f);
                 wIsPressed = false;
                 dIsPressed = false;
             }
             if (sIsPressed && aIsPressed)
             {
-                transform.position += Vector3.back * Time.deltaTime * (runSpeed * 0.7f);
-                transform.position += Vector3.left * Time.deltaTime * (runSpeed * 0.7f);
+                if (!isDashing)
+                    rb.velocity = new Vector3((runSpeed * -1) * 0.7f, 0, (runSpeed * -1) * 0.7f);
                 sIsPressed = false;
                 aIsPressed = false;
             }
             if (sIsPressed && dIsPressed)
             {
-                transform.position += Vector3.back * Time.deltaTime * (runSpeed * 0.7f);
-                transform.position += Vector3.right * Time.deltaTime * (runSpeed * 0.7f);
+                if (!isDashing)
+                    rb.velocity = new Vector3(runSpeed * 0.7f, 0, (runSpeed * -1) * 0.7f);
                 sIsPressed = false;
                 dIsPressed = false;
             }
@@ -117,40 +124,43 @@ public class playerMovement : MonoBehaviour
             // Movement
             if (wIsPressed)
             {
-                //transform.position += Vector3.forward * Time.deltaTime * runSpeed;
-                rb.AddForce(Vector3.forward, ForceMode.VelocityChange);
+                if (!isDashing)
+                    rb.velocity = Vector3.forward * runSpeed;
                 wIsPressed = false;
             }
 
             if (aIsPressed)
             {
-                transform.position += Vector3.left * Time.deltaTime * runSpeed;
+                if (!isDashing)
+                    rb.velocity = Vector3.left * runSpeed;
                 aIsPressed = false;
             }
 
             if (sIsPressed)
             {
-                transform.position += Vector3.back * Time.deltaTime * runSpeed;
+                if (!isDashing)
+                    rb.velocity = Vector3.back * runSpeed;
                 sIsPressed = false;
             }
 
             if (dIsPressed)
             {
-                transform.position += Vector3.right * Time.deltaTime * runSpeed;
+                if (!isDashing)
+                    rb.velocity = Vector3.right * runSpeed;
                 dIsPressed = false;
             }
 
             if (spaceIsPressed && !isDashing && dashCooldown == 0)
             {
                 Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
-                Plane p = new Plane(Vector3.up, transform.position);
+                Plane p = new Plane(Vector3.up, rb.transform.position);
                 if (p.Raycast(mouseRay, out float hitDist))
                 {
                     Vector3 hitPoint = mouseRay.GetPoint(hitDist);
-                    transform.LookAt(hitPoint);
                     dashPosition = hitPoint;
-                    dashTeller = 15;
+                    dashTeller = 10;
                     isDashing = true;
+                    rb.velocity = Vector3.zero;
                     dashCooldown = 500;
                 }
             }
@@ -162,12 +172,12 @@ public class playerMovement : MonoBehaviour
 
             if (isDashing)
             {
-                Debug.Log(dashTeller);
+                Debug.Log(dashPosition);
 
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f);
+                    rb.MovePosition(Vector3.MoveTowards(rb.position, new Vector3(dashPosition.x, rb.position.y, dashPosition.z), 0.8f));
                 }
                 else
                 {
