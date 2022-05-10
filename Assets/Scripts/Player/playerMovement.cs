@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
     private PhotonView view;
     //movement
     private bool wIsPressed;
@@ -34,6 +34,7 @@ public class playerMovement : MonoBehaviour
         view = GetComponent<PhotonView>();
         cam = Camera.main;
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -116,7 +117,8 @@ public class playerMovement : MonoBehaviour
             // Movement
             if (wIsPressed)
             {
-                transform.position += Vector3.forward * Time.deltaTime * runSpeed;
+                //transform.position += Vector3.forward * Time.deltaTime * runSpeed;
+                rb.AddForce(Vector3.forward, ForceMode.VelocityChange);
                 wIsPressed = false;
             }
 
