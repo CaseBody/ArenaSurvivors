@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  weaponRange: 1
   animator: {fileID: 9100000, guid: ac1465161b117d14bb343b2ebb3752db, type: 2}
   attachLeft: 1
 --- !u!114 &3247336766433321376

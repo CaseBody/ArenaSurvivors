@@ -27,8 +27,8 @@ public class playerMovement : MonoBehaviour
     private bool mouseIsPressed;
     private bool isAttacking;
     private float attackCooldown;
+    private BoxCollider attackRange;
     public int attackTime;
-    public int attackRange;
 
     public GameObject leftHand;
     public GameObject rightHand;
@@ -53,7 +53,7 @@ public class playerMovement : MonoBehaviour
     {
         if (weapon == null)
         {
-            AddWeapon("2h Sword");
+            AddWeapon("Fist");
         }
 
         //movement
@@ -178,6 +178,7 @@ public class playerMovement : MonoBehaviour
             {
                 spaceIsPressed = false;
             }
+
 
             if (isDashing)
             {
@@ -328,6 +329,17 @@ public class playerMovement : MonoBehaviour
             weapon.transform.position = rightHand.transform.position;
             weapon.transform.rotation = rightHand.transform.rotation;
             weapon.transform.parent = rightHand.transform;
+        }
+
+        if (script.weaponRange > 1)
+        {
+            attackRange.size = new Vector3(attackRange.size.x, attackRange.size.y, script.weaponRange);
+            attackRange.center = new Vector3(attackRange.center.x, attackRange.center.y, script.weaponRange / 4);
+        }
+        else
+        {
+            attackRange.size = new Vector3(attackRange.size.x, attackRange.size.y, script.weaponRange);
+            attackRange.center = new Vector3(attackRange.center.x, attackRange.center.y, 0);
         }
 
         anim.runtimeAnimatorController = script.animator as RuntimeAnimatorController;
