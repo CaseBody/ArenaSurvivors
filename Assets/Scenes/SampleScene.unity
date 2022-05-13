@@ -139,7 +139,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 841619894757218482, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &42744692
@@ -156,7 +156,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &72181133 stripped
 GameObject:
@@ -174,7 +174,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2935466873438223009, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &72181136
@@ -191,7 +191,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &81177579 stripped
 GameObject:
@@ -209,7 +209,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4250874837120227591, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &81177582
@@ -226,7 +226,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &111940881 stripped
 GameObject:
@@ -244,7 +244,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 77768748465322371, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &111940884
@@ -261,7 +261,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &163521747 stripped
 GameObject:
@@ -279,7 +279,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -120695595506849790, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &163521750
@@ -296,7 +296,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &205415050 stripped
 GameObject:
@@ -314,7 +314,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8517211419980355960, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &205415053
@@ -331,7 +331,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &207191484 stripped
 GameObject:
@@ -349,7 +349,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1719797356835624926, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &207191487
@@ -366,7 +366,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &236700783 stripped
 GameObject:
@@ -384,7 +384,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1137624454243228069, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &236700786
@@ -401,7 +401,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &270539188 stripped
 GameObject:
@@ -419,7 +419,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3203357182421251821, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &270539191
@@ -436,7 +436,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &287318707 stripped
 GameObject:
@@ -454,7 +454,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8494710361033483254, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &287318710
@@ -471,7 +471,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &298019436 stripped
 GameObject:
@@ -489,7 +489,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8109138168352907076, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &298019439
@@ -506,7 +506,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &301480351 stripped
 GameObject:
@@ -524,7 +524,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7114589595604540576, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &301480354
@@ -541,7 +541,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &334772790 stripped
 GameObject:
@@ -559,7 +559,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4783983901217736302, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &334772793
@@ -576,7 +576,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &344617540 stripped
 GameObject:
@@ -594,7 +594,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7747928136421026313, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &344617543
@@ -611,7 +611,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &346925575 stripped
 GameObject:
@@ -629,7 +629,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7053138192988754252, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &346925578
@@ -646,7 +646,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &395360342 stripped
 GameObject:
@@ -664,7 +664,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6564252631892066975, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &395360345
@@ -681,7 +681,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &425250431 stripped
 GameObject:
@@ -699,7 +699,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2896377261620692506, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &425250434
@@ -716,7 +716,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &442775219 stripped
 GameObject:
@@ -734,7 +734,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7659324738601620369, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &442775222
@@ -751,7 +751,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &457333335 stripped
 GameObject:
@@ -769,7 +769,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5324487913904419253, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &457333338
@@ -786,7 +786,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &468421787 stripped
 GameObject:
@@ -804,7 +804,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5358203910510919075, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &468421790
@@ -821,7 +821,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &476299983 stripped
 GameObject:
@@ -839,7 +839,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1766694902058554533, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &476299986
@@ -856,7 +856,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1001 &503489256
 PrefabInstance:
@@ -935,7 +935,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 341681414943341791, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &520263495
@@ -952,7 +952,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &522198682 stripped
 GameObject:
@@ -970,7 +970,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6163609344026606737, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &522198685
@@ -987,7 +987,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &539502114 stripped
 GameObject:
@@ -1005,7 +1005,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 701869291533980142, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &539502117
@@ -1022,7 +1022,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &558739876 stripped
 GameObject:
@@ -1040,7 +1040,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -458413306691192910, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &558739879
@@ -1057,7 +1057,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &586366453 stripped
 GameObject:
@@ -1075,7 +1075,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8469269571120623618, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &586366456
@@ -1092,7 +1092,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &588275112 stripped
 GameObject:
@@ -1110,7 +1110,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1659086496995470219, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &588275115
@@ -1127,7 +1127,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &591678673 stripped
 GameObject:
@@ -1145,7 +1145,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9216545192861852589, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &591678676
@@ -1162,7 +1162,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &597200943 stripped
 GameObject:
@@ -1180,7 +1180,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1075442408293649371, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &597200946
@@ -1197,7 +1197,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &600891326 stripped
 GameObject:
@@ -1215,7 +1215,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8505061262863886155, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &600891329
@@ -1232,7 +1232,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &624041210 stripped
 GameObject:
@@ -1250,7 +1250,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7025439349866240781, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &624041213
@@ -1267,7 +1267,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &642028951 stripped
 GameObject:
@@ -1285,7 +1285,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3530751805835440271, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &642028954
@@ -1302,7 +1302,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &677371198 stripped
 GameObject:
@@ -1320,7 +1320,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6370066385871862097, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &677371201
@@ -1337,7 +1337,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &691010650 stripped
 GameObject:
@@ -1355,7 +1355,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8841921864674773356, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &691010653
@@ -1372,7 +1372,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
@@ -1466,7 +1466,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &727983289 stripped
 GameObject:
@@ -1484,7 +1484,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6736692750873803178, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &727983292
@@ -1501,7 +1501,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &753203543 stripped
 GameObject:
@@ -1519,7 +1519,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8128075262371223473, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &753203546
@@ -1536,7 +1536,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &773303990 stripped
 GameObject:
@@ -1554,7 +1554,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5074539632996767352, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &773303993
@@ -1571,7 +1571,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &799199466 stripped
 GameObject:
@@ -1589,7 +1589,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6424697242271363043, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &799199469
@@ -1606,7 +1606,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &810903082 stripped
 GameObject:
@@ -1624,7 +1624,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7816890289669181021, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &810903085
@@ -1641,7 +1641,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &825146557 stripped
 GameObject:
@@ -1659,7 +1659,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8376579247741352956, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &825146560
@@ -1676,7 +1676,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &840477828 stripped
 GameObject:
@@ -1694,7 +1694,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -687653740387709069, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &840477831
@@ -1711,7 +1711,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &852540259 stripped
 GameObject:
@@ -1729,7 +1729,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7724696323982692017, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &852540262
@@ -1746,7 +1746,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &870438308 stripped
 GameObject:
@@ -1764,7 +1764,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6522161038064747447, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &870438311
@@ -1781,7 +1781,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &880126788 stripped
 GameObject:
@@ -1799,7 +1799,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6425397541272549495, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &880126791
@@ -1816,7 +1816,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &884521538 stripped
 GameObject:
@@ -1834,7 +1834,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2684908662389870512, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &884521541
@@ -1851,7 +1851,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &913145728 stripped
 GameObject:
@@ -1869,7 +1869,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7456072944117306011, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &913145731
@@ -1886,7 +1886,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &915694033 stripped
 GameObject:
@@ -1904,7 +1904,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3748248365212385188, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &915694036
@@ -1921,7 +1921,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &930537970 stripped
 GameObject:
@@ -1939,7 +1939,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5525015462806922890, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &930537973
@@ -1956,7 +1956,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &931619842 stripped
 GameObject:
@@ -1974,7 +1974,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5935165313236838310, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &931619845
@@ -1991,7 +1991,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &956739585 stripped
 GameObject:
@@ -2009,7 +2009,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2907967935975683382, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &956739588
@@ -2026,7 +2026,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &963194225
 GameObject:
@@ -2128,7 +2128,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7613332433117009229, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &976690856
@@ -2145,7 +2145,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &983950087 stripped
 GameObject:
@@ -2163,7 +2163,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7479997029363590899, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &983950090
@@ -2180,7 +2180,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &990939793 stripped
 GameObject:
@@ -2198,7 +2198,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7379531467695376983, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &990939796
@@ -2215,7 +2215,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &991163903 stripped
 GameObject:
@@ -2233,7 +2233,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8922112023558417945, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &991163906
@@ -2250,7 +2250,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1013338750 stripped
 GameObject:
@@ -2268,7 +2268,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1679203447879503406, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1013338753
@@ -2285,7 +2285,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1013447908 stripped
 GameObject:
@@ -2303,7 +2303,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2863416601769685546, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1013447911
@@ -2320,7 +2320,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1033713222 stripped
 GameObject:
@@ -2338,7 +2338,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7174267470462633084, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1033713225
@@ -2355,7 +2355,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1037085453 stripped
 GameObject:
@@ -2373,7 +2373,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9047729778229966048, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1037085456
@@ -2390,7 +2390,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1045006776 stripped
 GameObject:
@@ -2408,7 +2408,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2668841619902011886, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1045006779
@@ -2425,7 +2425,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1095672008 stripped
 GameObject:
@@ -2443,7 +2443,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3378782253010610538, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1095672011
@@ -2460,7 +2460,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1100557743 stripped
 GameObject:
@@ -2478,7 +2478,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4022041840782652165, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1100557746
@@ -2495,7 +2495,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1124950445
 GameObject:
@@ -2540,7 +2540,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1154697516 stripped
 GameObject:
@@ -2558,7 +2558,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7763459668497211920, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1154697519
@@ -2575,7 +2575,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1159332246 stripped
 GameObject:
@@ -2593,7 +2593,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9024716141790812113, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1159332249
@@ -2610,7 +2610,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1201431945 stripped
 GameObject:
@@ -2628,7 +2628,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8945362532453671022, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1201431948
@@ -2645,7 +2645,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1215857493 stripped
 GameObject:
@@ -2663,7 +2663,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2890342160622333325, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1215857496
@@ -2680,7 +2680,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1222105684 stripped
 GameObject:
@@ -2698,7 +2698,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6761923110206103130, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1222105687
@@ -2715,7 +2715,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1224243228 stripped
 GameObject:
@@ -2733,7 +2733,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7089432561855009611, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1224243231
@@ -2750,7 +2750,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1242344225 stripped
 GameObject:
@@ -2768,7 +2768,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7921253226492155276, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1242344228
@@ -2785,7 +2785,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1260432024 stripped
 GameObject:
@@ -2803,7 +2803,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7585527380135034713, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1260432027
@@ -2820,7 +2820,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1274164617 stripped
 GameObject:
@@ -2838,7 +2838,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8943533197697949889, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1274164620
@@ -2855,7 +2855,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1372453190 stripped
 GameObject:
@@ -2873,7 +2873,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7321516171901871987, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1372453193
@@ -2890,7 +2890,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1386753041 stripped
 GameObject:
@@ -2908,7 +2908,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8442323073390163606, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1386753044
@@ -2925,7 +2925,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1413035354 stripped
 GameObject:
@@ -2943,7 +2943,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 505641387937491517, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1413035357
@@ -2960,7 +2960,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1434005880 stripped
 GameObject:
@@ -2978,7 +2978,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1818111873101695623, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1434005883
@@ -2995,7 +2995,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1439861219 stripped
 GameObject:
@@ -3013,7 +3013,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7100491929894383033, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1439861222
@@ -3030,7 +3030,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1481755962 stripped
 GameObject:
@@ -3048,7 +3048,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1892881149192546964, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1481755965
@@ -3065,7 +3065,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1485377138 stripped
 GameObject:
@@ -3083,7 +3083,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5670240785392974566, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1485377141
@@ -3100,7 +3100,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1516805405 stripped
 GameObject:
@@ -3118,7 +3118,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -485743578430441126, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1516805408
@@ -3135,7 +3135,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1569367705 stripped
 GameObject:
@@ -3153,7 +3153,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7591503566589240239, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1569367708
@@ -3170,7 +3170,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1590859909 stripped
 GameObject:
@@ -3188,7 +3188,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5449294321951208250, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1590859912
@@ -3205,7 +3205,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1591133920 stripped
 GameObject:
@@ -3223,7 +3223,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3097738148453547906, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1591133923
@@ -3240,7 +3240,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1612464712 stripped
 GameObject:
@@ -3258,7 +3258,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8312469765112164533, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1612464715
@@ -3275,7 +3275,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1629012539 stripped
 GameObject:
@@ -3293,7 +3293,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2734373363205334929, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1629012542
@@ -3310,7 +3310,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1635939769 stripped
 GameObject:
@@ -3328,7 +3328,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2080108967766444684, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1635939772
@@ -3345,7 +3345,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1636221242 stripped
 GameObject:
@@ -3363,7 +3363,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6819554525295723918, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1636221245
@@ -3380,7 +3380,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1670218773 stripped
 GameObject:
@@ -3398,7 +3398,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2089124832967395528, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1670218776
@@ -3415,7 +3415,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1720909723 stripped
 GameObject:
@@ -3433,7 +3433,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3099164857651258913, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1720909726
@@ -3450,7 +3450,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1726611583 stripped
 GameObject:
@@ -3468,7 +3468,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1712101860552982092, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1726611586
@@ -3485,7 +3485,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1765058942 stripped
 GameObject:
@@ -3503,7 +3503,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3906832884256009306, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1765058945
@@ -3520,7 +3520,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1778832429 stripped
 GameObject:
@@ -3538,7 +3538,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4609612960148578110, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1778832432
@@ -3555,7 +3555,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1793073691 stripped
 GameObject:
@@ -3573,7 +3573,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3120473496706713227, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1793073694
@@ -3590,7 +3590,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1822524373 stripped
 GameObject:
@@ -3608,7 +3608,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4990829700342139071, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1822524376
@@ -3625,7 +3625,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1885301482 stripped
 GameObject:
@@ -3643,7 +3643,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1881264156961123418, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1885301485
@@ -3660,7 +3660,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1924814075 stripped
 GameObject:
@@ -3678,7 +3678,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7760074845545069097, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1924814078
@@ -3695,7 +3695,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1934005516 stripped
 GameObject:
@@ -3713,7 +3713,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2856275602270987256, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1934005519
@@ -3730,7 +3730,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1948540518 stripped
 GameObject:
@@ -3748,7 +3748,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4364213808276323523, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1948540521
@@ -3765,7 +3765,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1948848366 stripped
 GameObject:
@@ -3783,7 +3783,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2635094595480926024, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1948848369
@@ -3800,7 +3800,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1981203060 stripped
 GameObject:
@@ -3818,7 +3818,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -246013680712998435, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1981203063
@@ -3835,7 +3835,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1985921360 stripped
 GameObject:
@@ -3853,7 +3853,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9188140521946074214, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &1985921363
@@ -3870,7 +3870,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2006626860 stripped
 GameObject:
@@ -3888,7 +3888,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4094421681414966525, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2006626863
@@ -3905,7 +3905,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2006956601 stripped
 GameObject:
@@ -3923,7 +3923,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8623118649427008888, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2006956604
@@ -3940,7 +3940,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2030697000 stripped
 GameObject:
@@ -3958,7 +3958,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -981004378944408349, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2030697003
@@ -3975,7 +3975,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2051415803 stripped
 GameObject:
@@ -3993,7 +3993,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 785211535784807235, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2051415806
@@ -4010,7 +4010,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2054146285 stripped
 GameObject:
@@ -4028,7 +4028,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6198525040401489066, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2054146288
@@ -4045,7 +4045,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2090442255 stripped
 GameObject:
@@ -4063,7 +4063,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 282834947476036824, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2090442258
@@ -4080,7 +4080,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2121483302 stripped
 GameObject:
@@ -4098,7 +4098,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5356093529295425540, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2121483305
@@ -4115,7 +4115,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2132742682 stripped
 GameObject:
@@ -4133,7 +4133,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -3023587565482496673, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2132742685
@@ -4150,7 +4150,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &2145618016 stripped
 GameObject:
@@ -4168,7 +4168,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4344788843934612036, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &2145618019
@@ -4185,7 +4185,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1001 &7028275055462561817
 PrefabInstance:
@@ -4562,6 +4562,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6910516038035450288, guid: 28fafac2ea39ea24f9dc463c3a657225, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6954351389952999689, guid: 28fafac2ea39ea24f9dc463c3a657225, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -4605,6 +4609,10 @@ PrefabInstance:
     - target: {fileID: 7709379612112336784, guid: 28fafac2ea39ea24f9dc463c3a657225, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765064511152629475, guid: 28fafac2ea39ea24f9dc463c3a657225, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7888036323060342870, guid: 28fafac2ea39ea24f9dc463c3a657225, type: 3}
       propertyPath: m_Layer
@@ -4724,7 +4732,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &7028275055462561821 stripped
 GameObject:
@@ -4742,7 +4750,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5076798556035486163, guid: 381709b0f6a6ce44a82deda071ff0bf9, type: 3}
 --- !u!54 &7028275055462561823
