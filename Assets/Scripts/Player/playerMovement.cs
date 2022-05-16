@@ -161,7 +161,8 @@ public class playerMovement : MonoBehaviour
                     dashTeller = 10;
                     isDashing = true;
                     rb.velocity = Vector3.zero;
-                    dashCooldown = 500;
+                    dashCooldown = 100;
+                    rb.velocity = (((rb.position - dashPosition).normalized * 20) * Time.deltaTime) * -1;
                 }
             }
 
@@ -172,17 +173,9 @@ public class playerMovement : MonoBehaviour
 
             if (isDashing)
             {
-                Debug.Log(dashPosition);
-
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    //rb.MovePosition(Vector3.MoveTowards(rb.position, new Vector3(dashPosition.x, rb.position.y, dashPosition.z), 0.8f));
-                    var movepos = Vector3.MoveTowards(rb.position, new Vector3(dashPosition.x, rb.position.y, dashPosition.z), 0.8f);
-                    Ray ray = new Ray(rb.position, movepos);
-                    RaycastHit hit;
-                    if (!Physics.Raycast(ray, out hit, movepos.magnitude))
-                        rb.MovePosition(Vector3.MoveTowards(rb.position, new Vector3(dashPosition.x, rb.position.y, dashPosition.z), 0.8f));
                 }
                 else
                 {
