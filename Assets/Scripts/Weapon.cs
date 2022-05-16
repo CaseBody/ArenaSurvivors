@@ -7,7 +7,7 @@ using UnityEditor.Animations;
 public class WeaponScript : MonoBehaviour
 {
     public int damage;
-    public int weaponRange;
+    public float weaponRange;
     public AnimatorController animator;
     public bool attachLeft;
 }

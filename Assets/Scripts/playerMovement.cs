@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    private Rigidbody rigidbody;
     private PhotonView view;
     //movement
     private bool wIsPressed;
@@ -26,13 +25,17 @@ public class playerMovement : MonoBehaviour
     //attack
     private bool mouseIsPressed;
     private bool isAttacking;
+    private bool hasHit;
     private float attackCooldown;
+    public WeaponRange attackRangeManager;
     private BoxCollider attackRange;
     public int attackTime;
 
     public GameObject leftHand;
     public GameObject rightHand;
     public GameObject weapon;
+
+    List<GameObject> currentCollisions = new List<GameObject>();
 
 
     public Animator anim;
@@ -46,6 +49,8 @@ public class playerMovement : MonoBehaviour
         view = GetComponent<PhotonView>();
         cam = Camera.main;
         anim = GetComponent<Animator>();
+        hasHit = false;
+        attackRange = attackRangeManager.GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -53,7 +58,7 @@ public class playerMovement : MonoBehaviour
     {
         if (weapon == null)
         {
-            AddWeapon("Fist");
+            AddWeapon("2h Sword");
         }
 
         //movement
@@ -201,12 +206,18 @@ public class playerMovement : MonoBehaviour
             if (mouseIsPressed && attackCooldown == 0)
             {
                 isAttacking = true;
+                hasHit = false;
                 attackCooldown = 1;
             }
 
             if (isAttacking)
             {
                 attackCooldown -= 1 * Time.deltaTime;
+
+                if (hasHit == false && attackCooldown <= ((attackCooldown / 100) * 25))
+                {
+                    Hit();
+                }
 
                 if (attackCooldown <= 0)
                 {
@@ -347,6 +358,6 @@ public class playerMovement : MonoBehaviour
 
     public void Hit()
     {
-        
+        attackRangeManager.Hit(weapon.GetComponent<WeaponScript>().damage);
     }
 }
