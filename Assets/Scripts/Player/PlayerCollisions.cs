@@ -5,7 +5,11 @@ using System.Linq;
 using UnityEngine;
 //using Photon.Pun;
 
-public class playerMovement : MonoBehaviour
+//
+//Deze code is gebruikt met transform, dit gaan we toch aanpassen om met de rigidbody te werken!!!!!
+//
+
+public class playerCollisions : MonoBehaviour
 {
     private Rigidbody rigidbody;
     private PhotonView view;
@@ -74,14 +78,16 @@ public class playerMovement : MonoBehaviour
                 transform.LookAt(hitPoint);
             }
         }
+    }
 
+    private void FixedUpdate()
+    {
         //movement
         if (view.IsMine)
         {
             //Anim
             CheckAnim();
 
-            //Diagonal
             if (wIsPressed && aIsPressed)
             {
                 transform.position += Vector3.forward * Time.deltaTime * (runSpeed * 0.7f);
@@ -136,8 +142,6 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
-
-            //Dash
             if (spaceIsPressed && !isDashing && dashCooldown == 0)
             {
                 Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
@@ -165,7 +169,7 @@ public class playerMovement : MonoBehaviour
                 if (dashTeller > 0)
                 {
                     dashTeller--;
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.5f * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(dashPosition.x, transform.position.y, dashPosition.z), 0.6f);
                 }
                 else
                 {
