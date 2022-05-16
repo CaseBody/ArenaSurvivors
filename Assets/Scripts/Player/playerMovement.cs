@@ -75,10 +75,7 @@ public class playerMovement : MonoBehaviour
                 transform.LookAt(hitPoint);
             }
         }
-    }
 
-    private void FixedUpdate()
-    {
         //movement
         if (view.IsMine)
         {
@@ -150,6 +147,8 @@ public class playerMovement : MonoBehaviour
                 dIsPressed = false;
             }
 
+
+            //Dash
             if (spaceIsPressed && !isDashing && dashCooldown == 0)
             {
                 Ray mouseRay = cam.ScreenPointToRay(Input.mousePosition);
