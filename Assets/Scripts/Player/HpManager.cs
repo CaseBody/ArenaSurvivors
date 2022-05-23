@@ -13,6 +13,10 @@ public class HpManager : MonoBehaviour
     public int playerHp = 100;
     public int damagePlayer = 20;
     //zombies
+
+    //HPbar look at cam
+    public Transform cam;
+
     private void Start()
     {
         //when start, set health to maxhealth
@@ -40,5 +44,12 @@ public class HpManager : MonoBehaviour
     public void SetHealth(int health)
     {
         slider.value = health;
+    }
+
+    //health bar moves towards camera
+    void LateUpdate()
+    {
+        //Transform.LookAt(transform.position + cam.forward);
+        cam.LookAt(transform.position + cam.transform.forward);
     }
 }

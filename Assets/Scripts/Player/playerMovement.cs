@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 //using Photon.Pun;
 
 public class playerMovement : MonoBehaviour
@@ -27,6 +28,7 @@ public class playerMovement : MonoBehaviour
 
     //camera
     private Camera cam;
+    public Transform HPcam;
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +76,12 @@ public class playerMovement : MonoBehaviour
                 Vector3 hitPoint = mouseRay.GetPoint(hitDist);
                 transform.LookAt(hitPoint);
             }
+        }
+
+        //health bar moves towards camera
+        void LateUpdate()
+        {
+            transform.LookAt(transform.position + HPcam.forward);
         }
 
         //movement

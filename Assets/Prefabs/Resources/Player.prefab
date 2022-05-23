@@ -2399,6 +2399,7 @@ MonoBehaviour:
   runSpeed: 7.5
   dashSpeed: 10
   anim: {fileID: 0}
+  HPcam: {fileID: 0}
 --- !u!114 &1003117200
 MonoBehaviour:
   m_ObjectHideFlags: 0
