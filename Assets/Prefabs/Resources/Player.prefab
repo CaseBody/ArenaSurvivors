@@ -4171,14 +4171,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea0a86baf2992234583808a7a9b733f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 7.5
-  dashSpeed: 20
+  runSpeed: 6
+  dashSpeed: 10
   attackRangeManager: {fileID: 1439926907}
   attackTime: 0
   leftHand: {fileID: 8326504886679281290}
   rightHand: {fileID: 8326504887874974767}
   weapon: {fileID: 0}
-  anim: {fileID: 5060057864827286495}
+  anim: {fileID: 0}
 --- !u!114 &8326504887168306422
 MonoBehaviour:
   m_ObjectHideFlags: 0

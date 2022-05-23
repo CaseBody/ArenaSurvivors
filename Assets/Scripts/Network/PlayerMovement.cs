@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement2 : MonoBehaviour
 {
     private bool leftPressed;
     private bool rightPressed;
